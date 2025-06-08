@@ -1,33 +1,39 @@
-### todo_app
+# To-Do App (Frappe v15)
 
-first app
+A simple task management web application built using the Frappe Framework v15.
 
-### Installation
+## 🚀 Features
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- Create and manage tasks
+- Set task descriptions, priorities, due dates, and status
+- Mark tasks as “To-Do”, “In Progress”, or “Done”
+- View a summary report of tasks grouped by status
+- Clean UI with Frappe's built-in List View & Report Builder
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app todo_app
-```
+## 📦 Tech Stack
 
-### Contributing
+- **Backend**: Python (Frappe Framework)
+- **Database**: MariaDB (via Frappe)
+- **Frontend**: Auto-generated via Frappe Desk UI
+- **Reports**: Built using Frappe’s Report Builder
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+## 📁 Doctype Structure
 
-```bash
-cd apps/todo_app
-pre-commit install
-```
+The custom `Task` Doctype includes:
+- `title`: Task title
+- `description`: Short task summary
+- `status`: To-Do / In Progress / Done
+- `priority`: Low / Medium / High
+- `due_date`: Deadline for task
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+## 📊 Reports
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+- A `Task Summary` report is included
+- Grouped by task status for quick overviews
+- Built without custom code using Report Builder
 
-### License
+## 🛠 Setup Instructions (Dev)
 
-mit
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/xdeepraj/frappe-project.git
